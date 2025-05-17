@@ -21,7 +21,7 @@
     "dist"
   ],
   "scripts": {
-    "build": "tsdown --format esm,cjs --out-dir dist ./src/ruleset.ts",
+    "build": "tsdown",
     "test": "vitest run",
     "lint": "eslint .",
     "typecheck": "tsc --noEmit"
