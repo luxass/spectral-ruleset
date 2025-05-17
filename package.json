@@ -1,0 +1,41 @@
+{
+  "name": "@luxass/spectral-ruleset",
+  "version": "0.0.0",
+  "description": "Opinonated ruleset for Spectral",
+  "type": "module",
+  "packageManager": "pnpm@10.11.0",
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/openapi-contrib/style-guides.git"
+  },
+  "exports": {
+    ".": {
+      "types": "./dist/ruleset.d.ts",
+      "import": "./dist/ruleset.js",
+      "require": "./dist/ruleset.cjs"
+    }
+  },
+  "main": "dist/ruleset.cjs",
+  "module": "dist/ruleset.js",
+  "files": [
+    "dist"
+  ],
+  "scripts": {
+    "build": "tsdown --format esm,cjs --out-dir dist ./src/ruleset.ts",
+    "test": "vitest run"
+  },
+  "devDependencies": {
+    "@luxass/eslint-config": "^4.18.1",
+    "@stoplight/spectral-core": "^1.20.0",
+    "@stoplight/spectral-formats": "^1.8.2",
+    "@stoplight/spectral-functions": "^1.10.1",
+    "@stoplight/spectral-ref-resolver": "^1.0.5",
+    "@stoplight/spectral-rulesets": "^1.22.0",
+    "@stoplight/types": "^14.1.1",
+    "@types/node": "^22.15.18",
+    "eslint": "^9.27.0",
+    "tsdown": "^0.11.11",
+    "typescript": "^5.8.3",
+    "vitest": "^3.1.3"
+  }
+}
