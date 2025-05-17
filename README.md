@@ -5,7 +5,7 @@
 
 Opinionated ruleset for Spectral with focus on best practices for OpenAPI and AsyncAPI specifications.
 
-> [!IMPORTANT]  
+> [!IMPORTANT]
 > This package provides a collection of rules that enforce API best practices and conventions. The rules are designed to help you create more consistent and maintainable API specifications.
 
 ## Installation
@@ -20,7 +20,7 @@ Create a `.spectral.yml` file:
 
 ```yaml
 extends:
-  - '@luxass/spectral-ruleset'
+  - "@luxass/spectral-ruleset"
 ```
 
 Or quickly create one using:
