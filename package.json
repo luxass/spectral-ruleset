@@ -22,7 +22,9 @@
   ],
   "scripts": {
     "build": "tsdown --format esm,cjs --out-dir dist ./src/ruleset.ts",
-    "test": "vitest run"
+    "test": "vitest run",
+    "lint": "eslint .",
+    "typecheck": "tsc --noEmit"
   },
   "devDependencies": {
     "@luxass/eslint-config": "^4.18.1",
