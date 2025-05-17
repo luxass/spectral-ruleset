@@ -6,7 +6,7 @@
   "packageManager": "pnpm@10.11.0",
   "repository": {
     "type": "git",
-    "url": "git+https://github.com/openapi-contrib/style-guides.git"
+    "url": "git+https://github.com/luxass/spectral-ruleset.git"
   },
   "exports": {
     ".": {
