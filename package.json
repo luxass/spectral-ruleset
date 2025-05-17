@@ -1,6 +1,6 @@
 {
   "name": "@luxass/spectral-ruleset",
-  "version": "0.0.1",
+  "version": "0.0.2",
   "description": "Opinonated ruleset for Spectral",
   "type": "module",
   "packageManager": "pnpm@10.11.0",
