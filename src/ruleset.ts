@@ -1,12 +1,12 @@
 import type { RulesetDefinition } from "@stoplight/spectral-core";
-import { oas2, oas3 } from "@stoplight/spectral-formats";
 import {
   pattern,
-  schema,
   truthy,
 } from "@stoplight/spectral-functions";
 import { asyncapi, oas } from "@stoplight/spectral-rulesets";
 import { DiagnosticSeverity } from "@stoplight/types";
+import oas2Rules from "./oas2";
+import oas3Rules from "./oas3";
 
 export default {
   extends: [[oas as RulesetDefinition, "all"], [asyncapi as RulesetDefinition, "all"]],
@@ -14,7 +14,6 @@ export default {
     "operation-tags": "off",
     "operation-operationId": "off",
     "operation-success-response": "error",
-
     "luxass/api-homepage": {
       message: "APIs MUST have a root path (`/`) defined.",
       description:
@@ -50,7 +49,6 @@ export default {
       },
       severity: DiagnosticSeverity.Error,
     },
-
     "luxass/no-file-extensions-in-paths": {
       message:
         "Paths must not include file extensions such as .json, .xml, .html and .txt.",
@@ -65,44 +63,7 @@ export default {
       },
       severity: DiagnosticSeverity.Error,
     },
-
-    "luxass/oas2-protocol-https-only": {
-      description: "ALL requests MUST go through `https` protocol only.",
-      formats: [oas2],
-      message: "Schemes MUST be https and no other value is allowed.",
-      severity: DiagnosticSeverity.Error,
-      recommended: true,
-      type: "style",
-      given: "$",
-      then: {
-        field: "schemes",
-        function: schema,
-        functionOptions: {
-          schema: {
-            type: "array",
-            items: {
-              type: "string",
-              enum: ["https"],
-            },
-          },
-        },
-      },
-    },
-
-    "luxass/oas3-protocol-https-only": {
-      description: "ALL requests MUST go through `https` protocol only.",
-      formats: [oas3],
-      message: "Schemes MUST be https and no other value is allowed.",
-      severity: DiagnosticSeverity.Error,
-      recommended: true,
-      type: "style",
-      given: "$.servers..url",
-      then: {
-        function: pattern,
-        functionOptions: {
-          match: "/^https:/",
-        },
-      },
-    },
+    ...oas2Rules,
+    ...oas3Rules,
   },
 } satisfies RulesetDefinition;
