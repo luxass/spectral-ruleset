@@ -51,6 +51,21 @@ export default {
       severity: DiagnosticSeverity.Error,
     },
 
+    "luxass/no-file-extensions-in-paths": {
+      message:
+        "Paths must not include file extensions such as .json, .xml, .html and .txt.",
+      description:
+        "Paths must not include file extensions such as `.json`, `.xml`, `.html` and `.txt`. Use the OpenAPI `content` keyword to tell consumers which Media Types are available.",
+      given: "$.paths[*]~",
+      then: {
+        function: pattern,
+        functionOptions: {
+          notMatch: ".(json|xml|html|txt)$",
+        },
+      },
+      severity: DiagnosticSeverity.Error,
+    },
+
     "luxass/oas2-protocol-https-only": {
       description: "ALL requests MUST go through `https` protocol only.",
       formats: [oas2],
