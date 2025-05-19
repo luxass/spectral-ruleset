@@ -63,6 +63,19 @@ export default {
       },
       severity: DiagnosticSeverity.Error,
     },
+    "luxass/paths-kebab-case": {
+      description: "All YAML/JSON paths MUST follow kebab-case",
+      severity: DiagnosticSeverity.Warning,
+      recommended: true,
+      message: "{{property}} is not kebab-case: {{error}}",
+      given: "$.paths[*]~",
+      then: {
+        function: pattern,
+        functionOptions: {
+          match: "^\/([a-z0-9]+(-[a-z0-9]+)*)?(\/[a-z0-9]+(-[a-z0-9]+)*|\/{.+})*$", // doesn't allow /asasd{asdas}sadas pattern or not closed braces
+        },
+      },
+    },
     ...oas2Rules,
     ...oas3Rules,
   },
