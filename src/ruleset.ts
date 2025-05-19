@@ -76,6 +76,19 @@ export default {
         },
       },
     },
+    "luxass/headers-hyphenated-pascal-case": {
+      description: "All `HTTP` headers MUST use `Hyphenated-Pascal-Case` notation",
+      severity: DiagnosticSeverity.Error,
+      recommended: true,
+      message: "{{property}} is not hyphenated-pascal-case: {{error}}",
+      given: "$..parameters[?(@.in == 'header')].name",
+      then: {
+        function: pattern,
+        functionOptions: {
+          match: "/^([A-Z][a-z0-9]-)*([A-Z][a-z0-9])+/",
+        },
+      },
+    },
     ...oas2Rules,
     ...oas3Rules,
   },
