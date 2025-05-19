@@ -85,7 +85,7 @@ export default {
       then: {
         function: pattern,
         functionOptions: {
-          match: "/^([A-Z][a-z0-9]-)*([A-Z][a-z0-9])+/",
+          match: "^[A-Z][a-z0-9]*(-[A-Z][a-z0-9]*)*$",
         },
       },
     },
