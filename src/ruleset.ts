@@ -89,6 +89,18 @@ export default {
         },
       },
     },
+    "luxass/version-in-info": {
+      message: "API version should follow semantic versioning.",
+      description: "The info.version field should follow semantic versioning (e.g., 1.0.0).",
+      given: "$.info.version",
+      then: {
+        function: pattern,
+        functionOptions: {
+          match: "^\\d+\\.\\d+\\.\\d+",
+        },
+      },
+      severity: DiagnosticSeverity.Warning,
+    },
     ...oas2Rules,
     ...oas3Rules,
   },
