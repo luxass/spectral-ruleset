@@ -27,18 +27,18 @@
     "typecheck": "tsc --noEmit"
   },
   "devDependencies": {
-    "@luxass/eslint-config": "5.1.1",
-    "@stoplight/spectral-core": "1.20.0",
-    "@stoplight/spectral-formats": "1.8.2",
-    "@stoplight/spectral-functions": "1.10.1",
-    "@stoplight/spectral-ref-resolver": "1.0.5",
-    "@stoplight/spectral-rulesets": "1.22.0",
-    "@stoplight/types": "14.1.1",
-    "@types/node": "22.16.4",
-    "eslint": "9.31.0",
-    "publint": "0.3.12",
-    "tsdown": "0.12.9",
-    "typescript": "5.8.3",
-    "vitest": "3.2.4"
+    "@luxass/eslint-config": "^6.0.3",
+    "@stoplight/spectral-core": "^1.21.0",
+    "@stoplight/spectral-formats": "^1.8.2",
+    "@stoplight/spectral-functions": "^1.10.1",
+    "@stoplight/spectral-ref-resolver": "^1.0.5",
+    "@stoplight/spectral-rulesets": "^1.22.0",
+    "@stoplight/types": "^14.1.1",
+    "@types/node": "^22.16.4",
+    "eslint": "^9.39.2",
+    "publint": "^0.3.17",
+    "tsdown": "^0.20.1",
+    "typescript": "^5.9.3",
+    "vitest": "^4.0.18"
   }
 }
