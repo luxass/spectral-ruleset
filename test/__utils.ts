@@ -23,6 +23,7 @@ type Scenario = ReadonlyArray<
 >;
 
 export function spectralRuleTest(ruleName: RuleName, tests: Scenario): void {
+  // eslint-disable-next-line test/prefer-lowercase-title
   describe(`Rule ${ruleName}`, () => {
     const concurrent = tests.every(
       (test) => test.mocks === void 0 || Object.keys(test.mocks).length === 0,
