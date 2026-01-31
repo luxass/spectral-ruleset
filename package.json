@@ -10,13 +10,13 @@
   },
   "exports": {
     ".": {
-      "import": "./dist/ruleset.js",
+      "import": "./dist/ruleset.mjs",
       "require": "./dist/ruleset.cjs"
     },
     "./package.json": "./package.json"
   },
   "main": "./dist/ruleset.cjs",
-  "module": "./dist/ruleset.js",
+  "module": "./dist/ruleset.mjs",
   "files": [
     "dist"
   ],
