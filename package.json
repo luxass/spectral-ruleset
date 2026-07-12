@@ -37,7 +37,7 @@
     "@types/node": "^22.16.4",
     "eslint": "^9.39.2",
     "publint": "^0.3.17",
-    "tsdown": "^0.20.1",
+    "tsdown": "^0.22.0",
     "typescript": "^5.9.3",
     "vitest": "^4.0.18"
   }
