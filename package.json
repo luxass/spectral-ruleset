@@ -3,7 +3,7 @@
   "version": "1.1.1",
   "description": "Opinonated ruleset for Spectral",
   "type": "module",
-  "packageManager": "pnpm@10.34.5",
+  "packageManager": "pnpm@10.34.6",
   "repository": {
     "type": "git",
     "url": "git+https://github.com/luxass/spectral-ruleset.git"
@@ -37,7 +37,7 @@
     "@types/node": "^22.16.4",
     "eslint": "^9.39.2",
     "publint": "^0.3.17",
-    "tsdown": "^0.20.1",
+    "tsdown": "^0.23.0",
     "typescript": "^5.9.3",
     "vitest": "^4.0.18"
   }
