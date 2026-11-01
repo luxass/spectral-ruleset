@@ -35,7 +35,7 @@
     "@stoplight/spectral-rulesets": "^1.22.0",
     "@stoplight/types": "^14.1.1",
     "@types/node": "^22.16.4",
-    "eslint": "^9.39.2",
+    "eslint": "^10.0.0",
     "publint": "^0.3.17",
     "tsdown": "^0.20.1",
     "typescript": "^5.9.3",
