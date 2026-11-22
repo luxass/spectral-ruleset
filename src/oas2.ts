@@ -1,13 +1,16 @@
 import type { RuleDefinition } from "@stoplight/spectral-core";
-import { oas2 } from "@stoplight/spectral-formats";
+import spectralFormats from "@stoplight/spectral-formats";
 import { pattern, schema } from "@stoplight/spectral-functions";
 import { DiagnosticSeverity } from "@stoplight/types";
+
+// Node exposes these CommonJS re-exports on the default import.
+const { oas2 } = spectralFormats;
 
 export default {
   "luxass/oas2/get-request-no-body": {
     message: "A `GET` request MUST NOT accept a request body.",
     description:
-        "Defining a request body on a HTTP GET is technically possible in some implementations, but is increasingly frowned upon due to the confusion that comes from unspecified behavior in the HTTP specification.",
+      "Defining a request body on a HTTP GET is technically possible in some implementations, but is increasingly frowned upon due to the confusion that comes from unspecified behavior in the HTTP specification.",
     given: "$.paths..get.parameters..in",
     then: {
       function: pattern,

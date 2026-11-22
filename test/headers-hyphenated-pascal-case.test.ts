@@ -1,4 +1,5 @@
 import { DiagnosticSeverity } from "@stoplight/types";
+
 import { spectralRuleTest } from "./__utils";
 
 export default spectralRuleTest("luxass/headers-hyphenated-pascal-case", [
@@ -54,7 +55,8 @@ export default spectralRuleTest("luxass/headers-hyphenated-pascal-case", [
     },
     errors: [
       {
-        message: "name is not hyphenated-pascal-case: \"content-type\" must match the pattern \"^[A-Z][a-z0-9]*(-[A-Z][a-z0-9]*)*$\"",
+        message:
+          'name is not hyphenated-pascal-case: "content-type" must match the pattern "^[A-Z][a-z0-9]*(-[A-Z][a-z0-9]*)*$"',
         path: ["paths", "/users", "get", "parameters", "0", "name"],
         severity: DiagnosticSeverity.Error,
       },
@@ -80,7 +82,8 @@ export default spectralRuleTest("luxass/headers-hyphenated-pascal-case", [
     },
     errors: [
       {
-        message: "name is not hyphenated-pascal-case: \"contentType\" must match the pattern \"^[A-Z][a-z0-9]*(-[A-Z][a-z0-9]*)*$\"",
+        message:
+          'name is not hyphenated-pascal-case: "contentType" must match the pattern "^[A-Z][a-z0-9]*(-[A-Z][a-z0-9]*)*$"',
         path: ["paths", "/users", "get", "parameters", "0", "name"],
         severity: DiagnosticSeverity.Error,
       },
@@ -106,7 +109,8 @@ export default spectralRuleTest("luxass/headers-hyphenated-pascal-case", [
     },
     errors: [
       {
-        message: "name is not hyphenated-pascal-case: \"CONTENT-TYPE\" must match the pattern \"^[A-Z][a-z0-9]*(-[A-Z][a-z0-9]*)*$\"",
+        message:
+          'name is not hyphenated-pascal-case: "CONTENT-TYPE" must match the pattern "^[A-Z][a-z0-9]*(-[A-Z][a-z0-9]*)*$"',
         path: ["paths", "/users", "get", "parameters", "0", "name"],
         severity: DiagnosticSeverity.Error,
       },
@@ -132,7 +136,8 @@ export default spectralRuleTest("luxass/headers-hyphenated-pascal-case", [
     },
     errors: [
       {
-        message: "name is not hyphenated-pascal-case: \"content_type\" must match the pattern \"^[A-Z][a-z0-9]*(-[A-Z][a-z0-9]*)*$\"",
+        message:
+          'name is not hyphenated-pascal-case: "content_type" must match the pattern "^[A-Z][a-z0-9]*(-[A-Z][a-z0-9]*)*$"',
         path: ["paths", "/users", "get", "parameters", "0", "name"],
         severity: DiagnosticSeverity.Error,
       },

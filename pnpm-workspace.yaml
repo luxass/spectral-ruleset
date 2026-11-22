@@ -1,0 +1,29 @@
+ignoreScripts: true
+minimumReleaseAge: 7200
+minimumReleaseAgeStrict: true
+trustPolicy: no-downgrade
+strictDepBuilds: true
+blockExoticSubdeps: true
+catalogMode: prefer
+
+catalogs:
+  dev:
+    oxfmt: 0.79.0
+    oxlint: 1.94.0
+    publint: 0.3.25
+    tsdown: 0.23.7
+    typescript: 7.0.2
+
+  spectral:
+    "@stoplight/spectral-core": 1.21.0
+    "@stoplight/spectral-formats": 1.8.2
+    "@stoplight/spectral-functions": 1.10.1
+    "@stoplight/spectral-ref-resolver": 1.0.5
+    "@stoplight/spectral-rulesets": 1.22.0
+    "@stoplight/types": 14.1.1
+
+  test:
+    vitest: 5.1.0
+
+  types:
+    "@types/node": 24.19.2

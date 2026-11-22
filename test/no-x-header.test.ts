@@ -1,4 +1,5 @@
 import { DiagnosticSeverity } from "@stoplight/types";
+
 import { spectralRuleTest } from "./__utils";
 
 spectralRuleTest("luxass/no-x-headers", [
@@ -85,7 +86,7 @@ spectralRuleTest("luxass/no-x-headers", [
     },
     errors: [
       {
-        message: "Header `name` should not start with \"X-\".",
+        message: 'Header `name` should not start with "X-".',
         path: ["paths", "/foo", "get", "parameters", "0", "name"],
         severity: DiagnosticSeverity.Error,
       },

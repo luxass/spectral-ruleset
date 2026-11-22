@@ -1,4 +1,5 @@
 import { DiagnosticSeverity } from "@stoplight/types";
+
 import { spectralRuleTest } from "./__utils";
 
 spectralRuleTest("luxass/paths-kebab-case", [
@@ -30,7 +31,8 @@ spectralRuleTest("luxass/paths-kebab-case", [
     },
     errors: [
       {
-        message: "/userProfiles is not kebab-case: Object{} must match the pattern \"^/([a-z0-9]+(-[a-z0-9]+)*)?(/[a-z0-9]+(-[a-z0-9]+)*|/{.+})*$\"",
+        message:
+          '/userProfiles is not kebab-case: Object{} must match the pattern "^/([a-z0-9]+(-[a-z0-9]+)*)?(/[a-z0-9]+(-[a-z0-9]+)*|/{.+})*$"',
         path: ["paths", "/userProfiles"],
         severity: DiagnosticSeverity.Warning,
       },
@@ -47,7 +49,8 @@ spectralRuleTest("luxass/paths-kebab-case", [
     },
     errors: [
       {
-        message: "/UserProfile is not kebab-case: Object{} must match the pattern \"^/([a-z0-9]+(-[a-z0-9]+)*)?(/[a-z0-9]+(-[a-z0-9]+)*|/{.+})*$\"",
+        message:
+          '/UserProfile is not kebab-case: Object{} must match the pattern "^/([a-z0-9]+(-[a-z0-9]+)*)?(/[a-z0-9]+(-[a-z0-9]+)*|/{.+})*$"',
         path: ["paths", "/UserProfile"],
         severity: DiagnosticSeverity.Warning,
       },
@@ -64,7 +67,8 @@ spectralRuleTest("luxass/paths-kebab-case", [
     },
     errors: [
       {
-        message: "/user_profile is not kebab-case: Object{} must match the pattern \"^/([a-z0-9]+(-[a-z0-9]+)*)?(/[a-z0-9]+(-[a-z0-9]+)*|/{.+})*$\"",
+        message:
+          '/user_profile is not kebab-case: Object{} must match the pattern "^/([a-z0-9]+(-[a-z0-9]+)*)?(/[a-z0-9]+(-[a-z0-9]+)*|/{.+})*$"',
         path: ["paths", "/user_profile"],
         severity: DiagnosticSeverity.Warning,
       },
@@ -81,7 +85,8 @@ spectralRuleTest("luxass/paths-kebab-case", [
     },
     errors: [
       {
-        message: "/users/{id/profile is not kebab-case: Object{} must match the pattern \"^/([a-z0-9]+(-[a-z0-9]+)*)?(/[a-z0-9]+(-[a-z0-9]+)*|/{.+})*$\"",
+        message:
+          '/users/{id/profile is not kebab-case: Object{} must match the pattern "^/([a-z0-9]+(-[a-z0-9]+)*)?(/[a-z0-9]+(-[a-z0-9]+)*|/{.+})*$"',
         path: ["paths", "/users/{id/profile"],
         severity: DiagnosticSeverity.Warning,
       },
@@ -98,7 +103,8 @@ spectralRuleTest("luxass/paths-kebab-case", [
     },
     errors: [
       {
-        message: "/users/{id}profile is not kebab-case: Object{} must match the pattern \"^/([a-z0-9]+(-[a-z0-9]+)*)?(/[a-z0-9]+(-[a-z0-9]+)*|/{.+})*$\"",
+        message:
+          '/users/{id}profile is not kebab-case: Object{} must match the pattern "^/([a-z0-9]+(-[a-z0-9]+)*)?(/[a-z0-9]+(-[a-z0-9]+)*|/{.+})*$"',
         path: ["paths", "/users/{id}profile"],
         severity: DiagnosticSeverity.Warning,
       },
