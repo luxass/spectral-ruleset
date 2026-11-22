@@ -1,4 +1,5 @@
 import { DiagnosticSeverity } from "@stoplight/types";
+
 import { spectralRuleTest } from "../__utils";
 
 spectralRuleTest("luxass/oas2/protocol-https-only", [

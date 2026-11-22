@@ -1,4 +1,5 @@
 import { DiagnosticSeverity } from "@stoplight/types";
+
 import { spectralRuleTest } from "./__utils";
 
 spectralRuleTest("luxass/no-file-extensions-in-paths", [
@@ -21,8 +22,7 @@ spectralRuleTest("luxass/no-file-extensions-in-paths", [
     },
     errors: [
       {
-        message:
-          "Paths must not include file extensions such as .json, .xml, .html and .txt.",
+        message: "Paths must not include file extensions such as .json, .xml, .html and .txt.",
         path: ["paths", "resources.json"],
         severity: DiagnosticSeverity.Error,
       },
@@ -37,8 +37,7 @@ spectralRuleTest("luxass/no-file-extensions-in-paths", [
     },
     errors: [
       {
-        message:
-          "Paths must not include file extensions such as .json, .xml, .html and .txt.",
+        message: "Paths must not include file extensions such as .json, .xml, .html and .txt.",
         path: ["paths", "resources.xml"],
         severity: DiagnosticSeverity.Error,
       },
@@ -53,8 +52,7 @@ spectralRuleTest("luxass/no-file-extensions-in-paths", [
     },
     errors: [
       {
-        message:
-          "Paths must not include file extensions such as .json, .xml, .html and .txt.",
+        message: "Paths must not include file extensions such as .json, .xml, .html and .txt.",
         path: ["paths", "resources.html"],
         severity: DiagnosticSeverity.Error,
       },
@@ -69,8 +67,7 @@ spectralRuleTest("luxass/no-file-extensions-in-paths", [
     },
     errors: [
       {
-        message:
-          "Paths must not include file extensions such as .json, .xml, .html and .txt.",
+        message: "Paths must not include file extensions such as .json, .xml, .html and .txt.",
         path: ["paths", "resources.txt"],
         severity: DiagnosticSeverity.Error,
       },
@@ -96,8 +93,7 @@ spectralRuleTest("luxass/no-file-extensions-in-paths", [
     },
     errors: [
       {
-        message:
-          "Paths must not include file extensions such as .json, .xml, .html and .txt.",
+        message: "Paths must not include file extensions such as .json, .xml, .html and .txt.",
         path: ["paths", "resources.json"],
         severity: DiagnosticSeverity.Error,
       },
@@ -112,8 +108,7 @@ spectralRuleTest("luxass/no-file-extensions-in-paths", [
     },
     errors: [
       {
-        message:
-          "Paths must not include file extensions such as .json, .xml, .html and .txt.",
+        message: "Paths must not include file extensions such as .json, .xml, .html and .txt.",
         path: ["paths", "resources.xml"],
         severity: DiagnosticSeverity.Error,
       },
@@ -128,8 +123,7 @@ spectralRuleTest("luxass/no-file-extensions-in-paths", [
     },
     errors: [
       {
-        message:
-          "Paths must not include file extensions such as .json, .xml, .html and .txt.",
+        message: "Paths must not include file extensions such as .json, .xml, .html and .txt.",
         path: ["paths", "resources.html"],
         severity: DiagnosticSeverity.Error,
       },
@@ -144,8 +138,7 @@ spectralRuleTest("luxass/no-file-extensions-in-paths", [
     },
     errors: [
       {
-        message:
-          "Paths must not include file extensions such as .json, .xml, .html and .txt.",
+        message: "Paths must not include file extensions such as .json, .xml, .html and .txt.",
         path: ["paths", "resources.txt"],
         severity: DiagnosticSeverity.Error,
       },
